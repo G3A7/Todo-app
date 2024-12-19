@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+p {
+  margin-bottom: 0;
+}
+body {
+  background-image: linear-gradient(to right, rgba(29, 5, 54, 0.871), rgba(77, 13, 106, 0.871));
+}
+.container {
+  margin-top: 30px;
+}
+.todo-header {
+  color: #fff;
+  background-color: rgba(162, 7, 234, 0.871);
+}
+.progress {
+  margin-top: 10px;
+}
+.progress .prog {
+  width: 50%;
+  background-image: linear-gradient(to right, rgba(29, 5, 54, 0.871), rgba(77, 13, 106, 0.871));
+}
+
+.div-circle {
+  border: 2px solid #fff;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.inputs {
+  padding-block: 20px;
+  background-color: #fff;
+}
+[name="task"] {
+  width: 85%;
+  box-shadow: 0 0 5px #00000038;
+  padding-block: 10px;
+}
+[name="task"]:focus {
+  box-shadow: 0 0 0 2px rgba(77, 13, 106, 0.871) !important;
+}
+.inputs button {
+  background-image: linear-gradient(to right, rgba(29, 5, 54, 0.871), #4d0d6ade);
+  color: #fff;
+  padding-block: 10px;
+  padding-inline: 1.875rem;
+}
+.inputs button:hover,
+button:focus-visible {
+  color: #fff !important;
+}
+.task {
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #0000006b;
+}
+.custom-tooltip {
+  --bs-tooltip-bg: #3a0752e7;
+  --bs-tooltip-color: #fff;
+}
+.task p.complete {
+  text-decoration: line-through;
+}
+.task .icon-completed {
+  display: block;
+  cursor: pointer;
+  color: rgb(14, 149, 14);
+  font-size: 22px;
+}
+.task .icon i {
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .container {
+    width: 60%;
+  }
+}

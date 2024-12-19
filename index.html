@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-header p-3 rounded-3">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <h3>Todo App</h3>
+            <span>Keep it up!</span>
+          </div>
+          <div class="div-circle">2/4</div>
+        </div>
+        <div class="progress">
+          <div class="prog"></div>
+        </div>
+      </div>
+
+      <div class="row mt-3 g-4">
+        <div class="col">
+          <div
+            class="inputs gap-3 rounded-3 d-flex justify-content-between align-items-center px-2"
+          >
+            <input
+              class="form-control"
+              type="text"
+              name="task"
+              id="task"
+              placeholder="write the Task 😀"
+            />
+            <button class="btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="todos mt-5 p-4 bg-white rounded-3">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="task d-flex align-items-center gap-3 justify-content-between">
+              <p
+                data-bs-toggle="tooltip"
+                data-bs-title="Double click to complete the task "
+                class="complete"
+                data-bs-custom-class="custom-tooltip"
+               
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, non?
+              </p>
+              <div class="icon-completed">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-trash-can"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

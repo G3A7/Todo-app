@@ -21,8 +21,9 @@ body {
   margin-top: 10px;
 }
 .progress .prog {
-  width: 50%;
+  /* width: 50%; */
   background-image: linear-gradient(to right, rgba(29, 5, 54, 0.871), rgba(77, 13, 106, 0.871));
+  transition: width .5s;
 }
 
 .div-circle {
@@ -53,6 +54,7 @@ body {
 button:focus-visible {
   color: #fff !important;
 }
+
 .task {
   padding: 20px;
   border-radius: 15px;
@@ -76,14 +78,77 @@ button:focus-visible {
   color: red;
   cursor: pointer;
 }
+
+.swal {
+  width: 350px;
+}
+.w-h {
+  position: fixed !important;
+  top: 5px !important;
+}
+
 @media (min-width: 992px) {
   .container {
     width: 60%;
   }
+  .swal {
+    width: 30%;
+  }
 }
 
-.ddd {
+/*loader*/
+.loader {
+  position: relative;
+  left: 46%;
+  transform: translateX(-50%);
   width: 50px;
   height: 50px;
-  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #4d0d6ade;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-left: 4px solid #a237d3de;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* loader completed*/
+.loader1 {
+  width: 20px;
+  height: 20px;
+  border: 5px solid #7a1977;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
